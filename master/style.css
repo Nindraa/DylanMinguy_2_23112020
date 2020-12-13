@@ -1,0 +1,905 @@
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('raleway/raleway-regular-webfont.eot');
+    src: url('raleway/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('raleway/raleway-regular-webfont.woff2') format('woff2'),
+         url('raleway/raleway-regular-webfont.woff') format('woff'),
+         url('raleway/raleway-regular-webfont.ttf') format('truetype'),
+         url('raleway/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('ralewaybold/raleway-bold-webfont.eot');
+    src: url('ralewaybold/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ralewaybold/raleway-bold-webfont.woff2') format('woff2'),
+         url('ralewaybold/raleway-bold-webfont.woff') format('woff'),
+         url('ralewaybold/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+{
+	font-family: ralewayregular, ralewaybold, serif;
+	font-weight: normal;
+	width: 100%;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-top: 36px;
+}
+
+#logo
+{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+#logo img
+{
+	width: 100px;
+	height: 45px;
+}
+
+header nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+
+header nav ul li
+{
+	margin-right: 65px;
+}
+
+header nav a
+{
+	color: black;
+	text-decoration: none;
+}
+
+#inscription a
+{
+	font-family: ralewaybold;
+	color: #0065FC;
+}
+
+header nav a:hover
+{
+	color: #0065FC;
+	padding-top: 50px;
+	border-top: 3px solid #0065FC;
+}
+
+#geo_filtres h1
+{
+	font-size: 13pt;
+	font-family: ralewaybold;
+}
+
+#geo_filtres p
+{
+	font-size: 10pt;
+}
+
+#ville
+{
+	display: flex;
+	flex-direction: row;
+	font-family: ralewaybold;
+}
+
+.fa-map-marker-alt
+{
+	background-color: #F2F2F2;
+	border-radius: 12px 0px 0px 12px;
+	padding: 16px;
+	padding-right: 20px;
+	margin: 0px;
+	z-index: 3;
+}
+
+#ville p
+{
+	border-top: 1px solid #F2F2F2;
+	border-bottom: 1px solid #F2F2F2;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	width: 250px;
+	padding-left: 50px;
+	margin: 0px;
+	z-index: 1;
+	text-align: left;
+}
+
+.fa-search
+{
+	background-color: #0065FC;
+	border-radius: 12px 12px 12px 12px;
+	padding: 16px;
+	padding-left: 20px;
+	margin: 0px;
+	color: white;
+	z-index: 2;
+	position: relative;
+	left: -20px;
+}
+
+#filtres
+{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	line-height: 50px;
+}
+
+#filtres ul
+{
+	display: flex;
+	list-style-type: none;
+	margin: 0px;
+}
+
+#filtres ul li
+{
+	margin-right: 25px;
+	padding-right: 25px;
+	height: 50px;
+	border: 2px solid #F2F2F2;
+	line-height: 50px;
+	border-radius: 0px 25px 25px 0px;
+	padding-left: 25px;
+	font-family: ralewaybold;
+}
+
+.fa-money-bill-wave
+{
+	padding: 18px;
+	padding-left: 17px;
+	padding-right: 17px;
+	border-radius: 30px 30px 30px 30px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	position: relative;
+	left: 21px;
+}
+
+.fa-child
+{
+	padding: 18px;
+	padding-left: 21px;
+	padding-right: 21px;
+	border-radius: 30px 30px 30px 30px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	position: relative;
+	left: 21px;
+}
+
+.fa-heart
+{
+	padding: 18px;
+	padding-left: 19px;
+	padding-right: 19px;
+	border-radius: 30px 30px 30px 30px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	position: relative;
+	left: 21px;
+}
+
+.fa-dog
+{
+	padding: 18px;
+	border-radius: 30px 30px 30px 30px;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	position: relative;
+	left: 21px;
+}
+
+.fa-info
+{
+	padding: 4px;
+	padding-left: 8px;
+	padding-right: 7px;
+	border: 1px solid #F2F2F2;
+	border-radius: 12px 12px 12px 12px;
+	color: #0065FC;
+	font-size: 10px;
+	margin-right: 5px;
+}
+
+#info
+{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+
+#info p 
+{
+	font-size: 8pt;
+	margin-bottom: 20px;
+}
+
+#section_2
+{
+	display: flex;
+}
+
+#hebergements_ville
+{
+	background-color: #F2F2F2;
+	border-radius: 20px 20px 20px 20px;
+	width: 66%;
+	height: 625px;
+	padding-top: 45px;
+	margin-right: 20px;
+}
+
+#hebergements_ville h1
+{
+	display: flex;
+	align-items: flex-start;
+	padding-left: 40px;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: ralewaybold;
+}
+
+#annonces
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0px;
+}
+
+/* Annonce N°1 ville */
+
+#lien_hebergement_1
+{
+	text-decoration: none;
+}
+
+#annonce_1
+{
+	width: 245px;
+	height: 190px;
+	background-color: white;
+	margin-bottom: 15px;
+	overflow: hidden;
+	border: 5px solid white;
+	border-radius: 20px 20px 20px 20px;
+}
+
+
+
+#annonce_1 h2
+{
+	font-size: 10pt;
+	color: black;
+	font-family: ralewaybold;
+	margin-left: 10px;
+	margin-bottom: -5px;
+}
+
+#annonce_1 p
+{
+	font-size: 9pt;
+	color: black;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+#img_annonce_1
+{
+	width: 245px;
+	height: 115px;
+	overflow: hidden;
+}
+
+#annonce_1 img
+{
+	width: 245px;
+	height: auto;
+	position: relative;
+	top: -25px;
+}
+
+#etoile_bleu_1
+{
+	color: #0065FC;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+#etoile_gris_1
+{
+	color: #F2F2F2;
+	font-size: 12px;
+}
+
+/* Annonce N°2 ville */
+
+#lien_hebergement_2
+{
+	text-decoration: none;
+}
+
+#annonce_2
+{
+	width: 245px;
+	height: 190px;
+	background-color: white;
+	margin-bottom: 15px;
+	border: 5px solid white;
+	border-radius: 20px 20px 20px 20px;
+	overflow: hidden;
+}
+
+
+
+#annonce_2 h2
+{
+	font-size: 10pt;
+	color: black;
+	font-family: ralewaybold;
+	margin-left: 10px;
+	margin-bottom: -5px;
+}
+
+#annonce_2 p
+{
+	font-size: 9pt;
+	color: black;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+#img_annonce_2
+{
+	width: 245px;
+	height: 115px;
+	overflow: hidden;
+}
+
+#annonce_2 img
+{
+	width: 245px;
+	height: auto;
+	position: relative;
+	top: -25px;
+}
+
+#etoile_bleu_2
+{
+	color: #0065FC;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+/* Annonce N°3 Ville */
+
+#lien_hebergement_3
+{
+	text-decoration: none;
+}
+
+#annonce_3
+{
+	width: 245px;
+	height: 190px;
+	background-color: white;
+	margin-bottom: 15px;
+	overflow: hidden;
+	border: 5px solid white;
+	border-radius: 20px 20px 20px 20px;
+}
+
+
+
+#annonce_3 h2
+{
+	font-size: 10pt;
+	color: black;
+	font-family: ralewaybold;
+	margin-left: 10px;
+	margin-bottom: -5px;
+}
+
+#annonce_3 p
+{
+	font-size: 9pt;
+	color: black;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+#img_annonce_3
+{
+	width: 245px;
+	height: 115px;
+	overflow: hidden;
+}
+
+#annonce_3 img
+{
+	width: 245px;
+	height: auto;
+	position: relative;
+	top: -25px;
+}
+
+#etoile_bleu_3
+{
+	color: #0065FC;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+#etoile_gris_3
+{
+	color: #F2F2F2;
+	font-size: 12px;
+}
+
+/* Annonce N°4 Ville */
+
+#lien_hebergement_4
+{
+	text-decoration: none;
+}
+
+#annonce_4
+{
+	width: 245px;
+	height: 190px;
+	background-color: white;
+	margin-bottom: 15px;
+	overflow: hidden;
+	border: 5px solid white;
+	border-radius: 20px 20px 20px 20px;
+}
+
+
+
+#annonce_4 h2
+{
+	font-size: 10pt;
+	color: black;
+	font-family: ralewaybold;
+	margin-left: 10px;
+	margin-bottom: -5px;
+}
+
+#annonce_4 p
+{
+	font-size: 9pt;
+	color: black;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+#img_annonce_4
+{
+	width: 245px;
+	height: 115px;
+	overflow: hidden;
+}
+
+#annonce_4 img
+{
+	width: 245px;
+	height: auto;
+	position: relative;
+	top: -65px;
+}
+
+#etoile_bleu_4
+{
+	color: #0065FC;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+#etoile_gris_4
+{
+	color: #F2F2F2;
+	font-size: 12px;
+}
+
+/* Annonce N°5 Ville */
+
+#lien_hebergement_5
+{
+	text-decoration: none;
+}
+
+#annonce_5
+{
+	width: 245px;
+	height: 190px;
+	background-color: white;
+	margin-bottom: 15px;
+	overflow: hidden;
+	border: 5px solid white;
+	border-radius: 20px 20px 20px 20px;
+}
+
+
+#annonce_5 h2
+{
+	font-size: 10pt;
+	color: black;
+	font-family: ralewaybold;
+	margin-left: 10px;
+	margin-bottom: -5px;
+}
+
+#annonce_5 p
+{
+	font-size: 9pt;
+	color: black;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+#img_annonce_5
+{
+	width: 245px;
+	height: 115px;
+	overflow: hidden;
+}
+
+#annonce_5 img
+{
+	width: 245px;
+	height: auto;
+	position: relative;
+	top: -25px;
+}
+
+#etoile_bleu_5
+{
+	color: #0065FC;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+#etoile_gris_5
+{
+	color: #F2F2F2;
+	font-size: 12px;
+}
+
+/* Annonce N°6 Ville */
+
+#lien_hebergement_6
+{
+	text-decoration: none;
+}
+
+#annonce_6
+{
+	width: 245px;
+	height: 190px;
+	background-color: white;
+	margin-bottom: 15px;
+	overflow: hidden;
+	border: 5px solid white;
+	border-radius: 20px 20px 20px 20px;
+}
+
+
+#annonce_6 h2
+{
+	font-size: 10pt;
+	color: black;
+	font-family: ralewaybold;
+	margin-left: 10px;
+	margin-bottom: -5px;
+}
+
+#annonce_6 p
+{
+	font-size: 9pt;
+	color: black;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+#img_annonce_6
+{
+	width: 245px;
+	height: 115px;
+	overflow: hidden;
+}
+
+#annonce_6 img
+{
+	width: 245px;
+	height: auto;
+	position: relative;
+	top: -25px;
+}
+
+#etoile_bleu_6
+{
+	color: #0065FC;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+/* ASIDE */
+
+#populaires
+{
+	background-color: #F2F2F2;
+	border-radius: 20px 20px 20px 20px;
+	width: 33%;
+	height: 625px;
+	padding-top: 45px;
+	margin-left: 20px;
+	margin-right: 0px;
+}
+
+#populaires h1
+{
+	display: flex;
+	padding-left: 40px;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: ralewaybold;
+}
+
+#annonces_populaires
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0px;
+}
+
+/* Annonce N°1 Populaire */
+
+#lien_populaire_1
+{
+	text-decoration: none;
+}
+
+#populaire_1
+{
+	width: 343px;
+	height: 144px;
+	background-color: white;
+	margin-bottom: 16px;
+	overflow: hidden;
+	border: 5px solid white;
+	border-radius: 20px 20px 20px 20px;
+	display: flex;
+}
+
+#texte_pop_1
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#populaire_1 h2
+{
+	font-size: 13pt;
+	color: black;
+	font-family: ralewaybold;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+#populaire_1 p
+{
+	font-size: 9pt;
+	color: black;
+	margin-left: 10px;
+	margin-bottom: 50px;
+	margin-top: 0px;
+}
+
+#img_pop_1
+{
+	width: 128px;
+	height: 145px;
+	overflow: hidden;
+}
+
+#populaire_1 img
+{
+	width: 225px;
+	height: auto;
+	position: relative;
+	right: 50px;
+}
+
+#etoile_bleu_pop_1
+{
+	color: #0065FC;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+/* Annonce N°2 Populaire */
+
+#lien_populaire_2
+{
+	text-decoration: none;
+}
+
+#populaire_2
+{
+	width: 343px;
+	height: 144px;
+	background-color: white;
+	margin-bottom: 16px;
+	overflow: hidden;
+	border: 5px solid white;
+	border-radius: 20px 20px 20px 20px;
+	display: flex;
+}
+
+#texte_pop_2
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#populaire_2 h2
+{
+	font-size: 13pt;
+	color: black;
+	font-family: ralewaybold;
+	margin-left: 10px;
+	margin-bottom: 5px; 
+}
+
+#populaire_2 p
+{
+	font-size: 9pt;
+	color: black;
+	margin-left: 10px;
+	margin-bottom: 50px;
+	margin-top: 0px;
+}
+
+#img_pop_2
+{
+	width: 190px;
+	height: 145px;
+	overflow: hidden;
+}
+
+#populaire_2 img
+{
+	width: 250px;
+	height: auto;
+	position: relative;
+	right: 60px;
+	bottom: 10px;
+}
+
+#etoile_bleu_pop_2
+{
+	color: #0065FC;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+#etoile_gris_pop_2
+{
+	color: #F2F2F2;
+	margin-left: 10px;
+	font-size: 12px;
+	margin-left: 0px;
+}
+
+/* Annonce N°3 Populaire */
+
+#lien_populaire_3
+{
+	text-decoration: none;
+}
+
+#populaire_3
+{
+	width: 343px;
+	height: 144px;
+	background-color: white;
+	margin-bottom: 16px;
+	overflow: hidden;
+	border: 5px solid white;
+	border-radius: 20px 20px 20px 20px;
+	display: flex;
+}
+
+#texte_pop_3
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#populaire_3 h2
+{
+	font-size: 13pt;
+	color: black;
+	font-family: ralewaybold;
+	margin-left: 10px;
+	margin-bottom: 5px; 
+}
+
+#populaire_3 p
+{
+	font-size: 9pt;
+	color: black;
+	margin-left: 10px;
+	margin-bottom: 50px;
+	margin-top: 0px;
+}
+
+#img_pop_3
+{
+	width: 130px;
+	height: 145px;
+	overflow: hidden;
+}
+
+#populaire_3 img
+{
+	width: 140px;
+	height: auto;
+	position: relative;
+	right: 10px;
+	bottom: 40px;
+}
+
+#etoile_bleu_pop_3
+{
+	color: #0065FC;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+#etoile_gris_pop_3
+{
+	color: #F2F2F2;
+	margin-left: 10px;
+	font-size: 12px;
+	margin-left: 0px;
+}
+
+
+
+
+
+
