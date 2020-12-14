@@ -26,9 +26,10 @@ body
 {
 	font-family: ralewayregular, ralewaybold, serif;
 	font-weight: normal;
-	width: 100%;
-	margin-right: 50px;
-	margin-left: 50px;
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
 }
 
 header
@@ -97,7 +98,6 @@ header nav a:hover
 {
 	display: flex;
 	flex-direction: row;
-	font-family: ralewaybold;
 }
 
 .fa-map-marker-alt
@@ -116,24 +116,28 @@ header nav a:hover
 	border-bottom: 1px solid #F2F2F2;
 	padding-top: 14px;
 	padding-bottom: 14px;
-	width: 250px;
+	width: 200px;
 	padding-left: 50px;
 	margin: 0px;
 	z-index: 1;
 	text-align: left;
+	font-family: ralewaybold;
 }
 
-.fa-search
+#rechercher
+{
+	width: 50px;
+}
+
+#rechercher p
 {
 	background-color: #0065FC;
-	border-radius: 12px 12px 12px 12px;
-	padding: 16px;
-	padding-left: 20px;
-	margin: 0px;
+	border-radius: 0px 15px 15px 0px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 	color: white;
-	z-index: 2;
-	position: relative;
-	left: -20px;
+	width: 100px;
+	padding-left: 20px;
 }
 
 #filtres
@@ -247,6 +251,7 @@ header nav a:hover
 	height: 625px;
 	padding-top: 45px;
 	margin-right: 20px;
+	margin-bottom: 0px;
 }
 
 #hebergements_ville h1
@@ -273,6 +278,20 @@ header nav a:hover
 	margin: 0px;
 }
 
+#affichez_plus
+{
+	display: flex;
+	align-items: flex-start;
+	padding-left: 40px;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 0px;
+	font-family: ralewaybold;
+	text-decoration: none;
+	color: black;
+}
+
+
 /* Annonce N°1 ville */
 
 #lien_hebergement_1
@@ -285,10 +304,12 @@ header nav a:hover
 	width: 245px;
 	height: 190px;
 	background-color: white;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
+	margin-right: 15px;
+	box-shadow: 0px 0px 10px 1px #cecece;
 }
 
 
@@ -350,10 +371,12 @@ header nav a:hover
 	width: 245px;
 	height: 190px;
 	background-color: white;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
 	overflow: hidden;
+	margin-right: 15px;
+	box-shadow: 0px 0px 10px 1px #cecece;
 }
 
 
@@ -409,10 +432,11 @@ header nav a:hover
 	width: 245px;
 	height: 190px;
 	background-color: white;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0px 0px 10px 1px #cecece;
 }
 
 
@@ -474,10 +498,11 @@ header nav a:hover
 	width: 245px;
 	height: 190px;
 	background-color: white;
-	margin-bottom: 15px;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
+	margin-right: 15px;
+	box-shadow: 0px 0px 10px 1px #cecece;
 }
 
 
@@ -539,10 +564,11 @@ header nav a:hover
 	width: 245px;
 	height: 190px;
 	background-color: white;
-	margin-bottom: 15px;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
+	margin-right: 15px;
+	box-shadow: 0px 0px 10px 1px #cecece;
 }
 
 
@@ -603,10 +629,10 @@ header nav a:hover
 	width: 245px;
 	height: 190px;
 	background-color: white;
-	margin-bottom: 15px;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0px 0px 10px 1px #cecece;
 }
 
 
@@ -651,6 +677,13 @@ header nav a:hover
 
 /* ASIDE */
 
+#titre_populaire
+{
+	display: flex;
+	justify-content: space-between;
+	padding-right: 50px;
+}
+
 #populaires
 {
 	background-color: #F2F2F2;
@@ -660,6 +693,8 @@ header nav a:hover
 	padding-top: 45px;
 	margin-left: 20px;
 	margin-right: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 #populaires h1
@@ -697,11 +732,12 @@ header nav a:hover
 	width: 343px;
 	height: 144px;
 	background-color: white;
-	margin-bottom: 16px;
+	margin-bottom: 30px;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
 	display: flex;
+	box-shadow: 0px 0px 10px 1px #cecece;
 }
 
 #texte_pop_1
@@ -762,11 +798,12 @@ header nav a:hover
 	width: 343px;
 	height: 144px;
 	background-color: white;
-	margin-bottom: 16px;
+	margin-bottom: 30px;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
 	display: flex;
+	box-shadow: 0px 0px 10px 1px #cecece;
 }
 
 #texte_pop_2
@@ -836,11 +873,11 @@ header nav a:hover
 	width: 343px;
 	height: 144px;
 	background-color: white;
-	margin-bottom: 16px;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
 	display: flex;
+	box-shadow: 0px 0px 10px 1px #cecece;
 }
 
 #texte_pop_3
@@ -898,7 +935,415 @@ header nav a:hover
 	margin-left: 0px;
 }
 
-/*Test*/
+#section_3
+{
+	margin-bottom: 60px;
+}
+
+#section_3 h1
+{
+	font-family: ralewaybold;
+	margin-top: 60px;
+}
+
+#activites
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+/* Activité N°1 */
+
+#lien_activite_1 
+{
+	text-decoration: none;
+}
+#img_activite_1
+{
+	width: 300px;
+	height: 445px;
+	overflow: hidden;
+	border-radius: 25px 25px 25px 25px;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0px 0px 10px 5px #F2F2F2;
+}
+
+#img_activite_1 img
+{
+	position: relative;
+	left: -150px;
+	z-index: 1;
+	box-shadow: 0px 1px 2px #F2F2F2;
+}
+
+#legende_activite_1
+{
+	position: absolute;
+	background-color: white;
+	border-radius: 0px 0px 25px 25px;
+	bottom: 0px;
+	z-index: 2;
+	width: 100%;
+	height: 55px;
+}
+
+#legende_activite_1 p
+{
+	padding-left: 20px;
+	padding-right: auto;
+	color: black;
+	font-family: ralewaybold;
+}
+
+/* Flex colonne activité N°2 et N°3 */
+
+#activite_2_3
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* Activité N°2 */
+
+#lien_activite_2 
+{
+	text-decoration: none;
+}
+#img_activite_2
+{
+	width: 300px;
+	height: 235px;
+	overflow: hidden;
+	border-radius: 25px 25px 25px 25px;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0px 0px 10px 5px #F2F2F2;
+}
+
+#img_activite_2 img
+{
+	position: relative;
+	width: 100%;
+	height: auto;
+	bottom: 120px;
+	z-index: 1;
+}
+
+#legende_activite_2
+{
+	position: absolute;
+	background-color: white;
+	border-radius: 0px 0px 25px 25px;
+	bottom: 0px;
+	z-index: 2;
+	width: 100%;
+	height: 55px;
+}
+
+#legende_activite_2 p
+{
+	padding-left: 20px;
+	padding-right: auto;
+	color: black;
+	font-family: ralewaybold;
+}
+
+/* Activité N°3 */
+
+#lien_activite_3 
+{
+	text-decoration: none;
+}
+#img_activite_3
+{
+	width: 300px;
+	height: 165px;
+	overflow: hidden;
+	border-radius: 25px 25px 25px 25px;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0px 0px 10px 5px #F2F2F2;
+}
+
+#img_activite_3 img
+{
+	position: relative;
+	width: 100%;
+	height: auto;
+	bottom: 20px;
+	z-index: 1;
+}
+
+#legende_activite_3
+{
+	position: absolute;
+	background-color: white;
+	border-radius: 0px 0px 25px 25px;
+	bottom: 0px;
+	z-index: 2;
+	width: 100%;
+	height: 55px;
+}
+
+#legende_activite_3 p
+{
+	padding-left: 20px;
+	padding-right: auto;
+	color: black;
+	font-family: ralewaybold;
+}
+
+/* Activité N°4 */
+
+#lien_activite_4 
+{
+	text-decoration: none;
+}
+#img_activite_4
+{
+	width: 300px;
+	height: 445px;
+	overflow: hidden;
+	border-radius: 25px 25px 25px 25px;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0px 0px 10px 5px #F2F2F2;
+}
+
+#img_activite_4 img
+{
+	position: relative;
+	left: -150px;
+	z-index: 1;
+}
+
+#legende_activite_4
+{
+	position: absolute;
+	background-color: white;
+	border-radius: 0px 0px 25px 25px;
+	bottom: 0px;
+	z-index: 2;
+	width: 100%;
+	height: 55px;
+}
+
+#legende_activite_4 p
+{
+	padding-left: 20px;
+	padding-right: auto;
+	color: black;
+	font-family: ralewaybold;
+}
+
+/* Flex colonne activité N°5 et N°6 */
+
+#activite_5_6
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* Activité N°5 */
+
+#lien_activite_5 
+{
+	text-decoration: none;
+}
+#img_activite_5
+{
+	width: 300px;
+	height: 210px;
+	overflow: hidden;
+	border-radius: 25px 25px 25px 25px;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0px 0px 10px 5px #F2F2F2;
+}
+
+#img_activite_5 img
+{
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: auto;
+}
+
+#legende_activite_5
+{
+	position: absolute;
+	background-color: white;
+	border-radius: 0px 0px 25px 25px;
+	bottom: 0px;
+	z-index: 2;
+	width: 100%;
+	height: 55px;
+}
+
+#legende_activite_5 p
+{
+	padding-left: 20px;
+	padding-right: auto;
+	color: black;
+	font-family: ralewaybold;
+}
+
+/* Activité N°6 */
+
+#lien_activite_6 
+{
+	text-decoration: none;
+}
+#img_activite_6
+{
+	width: 300px;
+	height: 210px;
+	overflow: hidden;
+	border-radius: 25px 25px 25px 25px;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0px 0px 10px 5px #F2F2F2;
+}
+
+#img_activite_6 img
+{
+	position: relative;
+	z-index: 1;
+	width: 100%;
+}
+
+#legende_activite_6
+{
+	position: absolute;
+	background-color: white;
+	border-radius: 0px 0px 25px 25px;
+	bottom: 0px;
+	z-index: 2;
+	width: 100%;
+	height: 55px;
+}
+
+#legende_activite_6 p
+{
+	padding-left: 20px;
+	padding-right: auto;
+	color: black;
+	font-family: ralewaybold;
+}
+
+footer
+{
+	width: 100%;
+	height: 220px;
+	display: flex;
+	background-color: #F2F2F2;
+	position: absolute;
+	left: 0px;
+	padding-left: 50px;
+}
+
+#a_propos
+{
+	width: 33%;
+}
+
+#a_propos h1
+{
+	font-family: ralewaybold;
+	font-size: 12pt;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#a_propos a
+{
+	text-decoration: none;
+	color: black;
+}
+
+#a_propos ul
+{
+	padding: 0;
+}
+
+#a_propos li
+{
+	list-style-type: none;
+	margin-bottom: 15px;
+}
+
+#nos_hebergements
+{
+	width: 33%;
+}
+
+#nos_hebergements h1
+{
+	font-family: ralewaybold;
+	font-size: 12pt;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+
+#nos_hebergements a
+{
+	text-decoration: none;
+	color: black;
+}
+
+#nos_hebergements ul
+{
+	padding: 0;
+}
+
+#nos_hebergements li
+{
+	list-style-type: none;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+#assistance
+{
+	width: 33%;
+}
+
+#assistance h1
+{
+	font-family: ralewaybold;
+	font-size: 12pt;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#assistance a
+{
+	text-decoration: none;
+	color: black;
+}
+
+#assistance ul
+{
+	padding: 0;
+}
+
+#assistance li
+{
+	list-style-type: none;
+	margin-bottom: 15px;
+}
+
+
+
+
+
 
 
 
