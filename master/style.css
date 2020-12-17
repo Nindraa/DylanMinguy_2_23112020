@@ -49,8 +49,8 @@ header
 
 #logo img
 {
-	width: 100px;
-	height: 45px;
+	width: 25%;
+	height: auto;
 }
 
 header nav ul
@@ -151,6 +151,7 @@ header nav a:hover
 #filtres ul
 {
 	display: flex;
+	flex-wrap: wrap;
 	list-style-type: none;
 	margin: 0px;
 }
@@ -165,6 +166,26 @@ header nav a:hover
 	border-radius: 0px 25px 25px 0px;
 	padding-left: 25px;
 	font-family: ralewaybold;
+}
+
+#eco
+{
+	display: flex;
+}
+
+#fam
+{
+	display: flex;
+}
+
+#romantique
+{
+	display: flex;
+}
+
+#animaux
+{
+	display: flex;
 }
 
 .fa-money-bill-wave
@@ -241,56 +262,63 @@ header nav a:hover
 #section_2
 {
 	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: space-between;
 }
 
 #hebergements_ville
 {
 	background-color: #F2F2F2;
 	border-radius: 20px 20px 20px 20px;
-	width: 66%;
-	height: 625px;
-	padding-top: 45px;
-	margin-right: 20px;
-	margin-bottom: 0px;
+	width: 60%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding-left: 3%;
+	padding-right: 3%;
 }
 
 #hebergements_ville h1
 {
 	display: flex;
-	align-items: flex-start;
-	padding-left: 40px;
-	margin-right: auto;
-	margin-top: 0px;
-	margin-bottom: 0px;
 	font-family: ralewaybold;
+	justify-content: flex-start;
 }
 
 #annonces
 {
 	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	float: left;
+}
+
+#ligne_1
+{
+	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin: 0px;
+	justify-content: space-between;
 }
+
+#ligne_2
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
 
 #affichez_plus
 {
 	display: flex;
-	align-items: flex-start;
-	padding-left: 40px;
-	margin-right: auto;
-	margin-top: 25px;
-	margin-bottom: 0px;
+	justify-content: flex-start;
 	font-family: ralewaybold;
 	text-decoration: none;
 	color: black;
 }
-
 
 /* Annonce N°1 ville */
 
@@ -301,14 +329,12 @@ header nav a:hover
 
 #annonce_1
 {
-	width: 245px;
-	height: 190px;
+	width: 30%;
+	height: auto;
 	background-color: white;
-	margin-bottom: 30px;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
-	margin-right: 15px;
 	box-shadow: 0px 0px 10px 1px #cecece;
 }
 
@@ -340,7 +366,7 @@ header nav a:hover
 
 #annonce_1 img
 {
-	width: 245px;
+	width: 100%;
 	height: auto;
 	position: relative;
 	top: -25px;
@@ -368,14 +394,12 @@ header nav a:hover
 
 #annonce_2
 {
-	width: 245px;
-	height: 190px;
+	width: 30%;
+	height: auto;
 	background-color: white;
-	margin-bottom: 30px;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
 	overflow: hidden;
-	margin-right: 15px;
 	box-shadow: 0px 0px 10px 1px #cecece;
 }
 
@@ -429,10 +453,9 @@ header nav a:hover
 
 #annonce_3
 {
-	width: 245px;
-	height: 190px;
+	width: 30%;
+	height: auto;
 	background-color: white;
-	margin-bottom: 30px;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
@@ -495,14 +518,14 @@ header nav a:hover
 
 #annonce_4
 {
-	width: 245px;
-	height: 190px;
+	width: 30%;
+	height: auto;
 	background-color: white;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
-	margin-right: 15px;
 	box-shadow: 0px 0px 10px 1px #cecece;
+	margin-top: 30px;
 }
 
 
@@ -561,14 +584,14 @@ header nav a:hover
 
 #annonce_5
 {
-	width: 245px;
-	height: 190px;
+	width: 30%;
+	height: auto;
 	background-color: white;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
-	margin-right: 15px;
 	box-shadow: 0px 0px 10px 1px #cecece;
+	margin-top: 30px;
 }
 
 
@@ -626,13 +649,14 @@ header nav a:hover
 
 #annonce_6
 {
-	width: 245px;
-	height: 190px;
+	width: 30%;
+	height: auto;
 	background-color: white;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
 	box-shadow: 0px 0px 10px 1px #cecece;
+	margin-top: 30px;
 }
 
 
@@ -677,73 +701,61 @@ header nav a:hover
 
 /* ASIDE */
 
-#titre_populaire
-{
-	display: flex;
-	justify-content: space-between;
-	padding-right: 50px;
-}
-
 #populaires
 {
 	background-color: #F2F2F2;
 	border-radius: 20px 20px 20px 20px;
-	width: 33%;
-	height: 625px;
-	padding-top: 45px;
-	margin-left: 20px;
-	margin-right: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 28%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	float: right;
 }
+
+#titre_populaire
+{
+	display: flex;
+	align-content: flex-start;
+}
+
 
 #populaires h1
 {
-	display: flex;
-	padding-left: 40px;
-	margin-right: auto;
-	margin-top: 0px;
-	margin-bottom: 0px;
 	font-family: ralewaybold;
-}
-
-#annonces_populaires
-{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 30px;
-	padding-right: 30px;
-	margin: 0px;
 }
 
 /* Annonce N°1 Populaire */
 
-#lien_populaire_1
-{
-	text-decoration: none;
-}
 
 #populaire_1
 {
-	width: 343px;
-	height: 144px;
-	background-color: white;
-	margin-bottom: 30px;
-	overflow: hidden;
+	width: 90%;
+	height: 23%;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
-	display: flex;
 	box-shadow: 0px 0px 10px 1px #cecece;
+	background-color: white;
+	overflow: hidden;
+}
+
+#lien_populaire_1
+{
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
 }
 
 #texte_pop_1
 {
 	display: flex;
 	flex-direction: column;
+	width: 64%;
+	padding-left: 5%;
 }
 
 #populaire_1 h2
@@ -766,8 +778,8 @@ header nav a:hover
 
 #img_pop_1
 {
-	width: 128px;
-	height: 145px;
+	width: 36%;
+	height: auto;
 	overflow: hidden;
 }
 
@@ -777,6 +789,7 @@ header nav a:hover
 	height: auto;
 	position: relative;
 	right: 50px;
+	overflow: hidden;
 }
 
 #etoile_bleu_pop_1
@@ -791,14 +804,15 @@ header nav a:hover
 #lien_populaire_2
 {
 	text-decoration: none;
+	display: flex;
+	flex-direction: row;
 }
 
 #populaire_2
 {
-	width: 343px;
-	height: 144px;
+	width: 90%;
+	height: 23%;
 	background-color: white;
-	margin-bottom: 30px;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
@@ -810,6 +824,9 @@ header nav a:hover
 {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	width: 64%;
+	padding-left: 5%;
 }
 
 #populaire_2 h2
@@ -826,14 +843,14 @@ header nav a:hover
 	font-size: 9pt;
 	color: black;
 	margin-left: 10px;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	margin-top: 0px;
 }
 
 #img_pop_2
 {
-	width: 190px;
-	height: 145px;
+	width: 32%;
+	height: auto;
 	overflow: hidden;
 }
 
@@ -866,17 +883,18 @@ header nav a:hover
 #lien_populaire_3
 {
 	text-decoration: none;
+	display: flex;
+	flex-direction: row;
 }
 
 #populaire_3
 {
-	width: 343px;
-	height: 144px;
+	width: 90%;
+	height: 23%;
 	background-color: white;
 	overflow: hidden;
 	border: 5px solid white;
 	border-radius: 20px 20px 20px 20px;
-	display: flex;
 	box-shadow: 0px 0px 10px 1px #cecece;
 }
 
@@ -884,6 +902,8 @@ header nav a:hover
 {
 	display: flex;
 	flex-direction: column;
+	width: 64%;
+	padding-left: 5%;
 }
 
 #populaire_3 h2
@@ -906,8 +926,8 @@ header nav a:hover
 
 #img_pop_3
 {
-	width: 130px;
-	height: 145px;
+	width: 36%;
+	height: auto;
 	overflow: hidden;
 }
 
@@ -963,7 +983,7 @@ header nav a:hover
 }
 #img_activite_1
 {
-	width: 300px;
+	width: 22%;
 	height: 445px;
 	overflow: hidden;
 	border-radius: 25px 25px 25px 25px;
@@ -984,7 +1004,6 @@ header nav a:hover
 {
 	position: absolute;
 	background-color: white;
-	border-radius: 0px 0px 25px 25px;
 	bottom: 0px;
 	z-index: 2;
 	width: 100%;
@@ -1006,6 +1025,7 @@ header nav a:hover
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	width: 22%;
 }
 
 /* Activité N°2 */
@@ -1016,7 +1036,7 @@ header nav a:hover
 }
 #img_activite_2
 {
-	width: 300px;
+	width: 100%;
 	height: 235px;
 	overflow: hidden;
 	border-radius: 25px 25px 25px 25px;
@@ -1038,7 +1058,6 @@ header nav a:hover
 {
 	position: absolute;
 	background-color: white;
-	border-radius: 0px 0px 25px 25px;
 	bottom: 0px;
 	z-index: 2;
 	width: 100%;
@@ -1061,7 +1080,7 @@ header nav a:hover
 }
 #img_activite_3
 {
-	width: 300px;
+	width: 100%;
 	height: 165px;
 	overflow: hidden;
 	border-radius: 25px 25px 25px 25px;
@@ -1083,7 +1102,6 @@ header nav a:hover
 {
 	position: absolute;
 	background-color: white;
-	border-radius: 0px 0px 25px 25px;
 	bottom: 0px;
 	z-index: 2;
 	width: 100%;
@@ -1106,7 +1124,7 @@ header nav a:hover
 }
 #img_activite_4
 {
-	width: 300px;
+	width: 22%;
 	height: 445px;
 	overflow: hidden;
 	border-radius: 25px 25px 25px 25px;
@@ -1148,6 +1166,7 @@ header nav a:hover
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	width: 22%;
 }
 
 /* Activité N°5 */
@@ -1158,7 +1177,7 @@ header nav a:hover
 }
 #img_activite_5
 {
-	width: 300px;
+	width: 100%;
 	height: 210px;
 	overflow: hidden;
 	border-radius: 25px 25px 25px 25px;
@@ -1202,7 +1221,7 @@ header nav a:hover
 }
 #img_activite_6
 {
-	width: 300px;
+	width: 100%;
 	height: 210px;
 	overflow: hidden;
 	border-radius: 25px 25px 25px 25px;
@@ -1339,8 +1358,6 @@ footer
 	list-style-type: none;
 	margin-bottom: 15px;
 }
-
-
 
 
 
