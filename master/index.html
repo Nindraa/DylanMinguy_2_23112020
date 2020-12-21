@@ -5,7 +5,6 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="https://kit.fontawesome.com/1ed81bc7d6.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservia - Vacances de rêves</title>
 </head>
 
@@ -14,13 +13,15 @@
         <div id="logo">
             <img src="images/logo/reservia.png" alt="Logo Reservia" />
         </div>
-        <nav>
-            <ul>
-                <li class="navigation"><a href="#">Hébergements</a></li>
-                <li class="navigation"><a href="#">Activités</a></li>
-                <li id="inscription"><a href="#">S'inscrire</a></li>
-            </ul>
-        </nav>
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li class="navigation"><a href="#">Hébergements</a></li>
+                    <li class="navigation"><a href="#">Activités</a></li>
+                    <li id="inscription"><a href="#">S'inscrire</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section id="geo_filtres">
         <!-- Section filtres-->
@@ -31,6 +32,7 @@
             <p>Marseille, France</p>
             <div id="rechercher">
                 <p>Rechercher</p>
+                <span><i class="fas fa-search"></i></span>
             </div>
         </div>
         <div id="filtres">
@@ -65,7 +67,6 @@
         <article id="hebergements_ville">
             <h1>Hébergements à Marseille</h1>
             <div id="annonces">
-                <div id="ligne_1">
                 <div id="annonce_1">
                     <a href="#" id="lien_hebergement_1">
                         <div id="img_annonce_1">
@@ -118,8 +119,6 @@
                         </span>
                     </a>
                 </div>
-                </div>
-                <div id="ligne_2">
                 <div id="annonce_4">
                     <a href="#" id="lien_hebergement_4">
                         <div id="img_annonce_4">
@@ -171,7 +170,6 @@
                             <i class="fas fa-star"></i>
                         </span>
                     </a>
-                </div>
                 </div>
             </div>
             <a href="#" id="affichez_plus">Afficher plus</a>

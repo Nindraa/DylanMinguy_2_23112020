@@ -146,3 +146,59 @@ header nav ul li
 {
 	margin-right: 30px;
 }
+
+@media all and (max-width: 425px)
+{
+	header
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#logo
+	{
+		display: flex;
+	}
+	#logo img
+	{
+		width: 27%;
+	}
+	
+	header nav ul
+	{
+		list-style-type: none;
+	}
+
+	.navigation
+	{
+		border-bottom: solid 3px #F2F2F2;
+		padding-bottom: 20px;
+	}
+
+	.navigation a
+	{
+		text-decoration: none;
+		color: black;
+	}
+
+	.navigation a:hover
+	{
+		color: #0065FC;
+		border-bottom: solid 3px #0065FC;
+		border-top: none;
+		padding-bottom: 20px;
+	}	
+
+	#inscription
+	{
+		position: relative;
+	}
+
+	#inscription a
+	{
+		color: #0065FC;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
