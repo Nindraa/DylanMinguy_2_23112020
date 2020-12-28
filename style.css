@@ -112,7 +112,7 @@ header
 	margin-left: auto;
 }
 
-#geo_filtres h1
+#geo_filtres h2
 {
 	font-size: 13pt;
 	font-family: ralewaybold;
@@ -182,7 +182,7 @@ header
 	line-height: 50px;
 }
 
-#filtres h1
+#filtres h2
 {
 	margin-right: 2%;
 }
@@ -304,6 +304,12 @@ header
 	margin-left: auto;
 }
 
+#titre_section_2
+{
+	display: none;
+	visibility: hidden;
+}
+
 #hebergements_ville
 {
 	background-color: #F2F2F2;
@@ -317,7 +323,7 @@ header
 	padding-right: 3%;
 }
 
-#hebergements_ville h1
+#hebergements_ville h2
 {
 	display: flex;
 	font-family: ralewaybold;
@@ -747,7 +753,7 @@ header
 }
 
 
-#populaires h1
+#populaires h2
 {
 	font-family: ralewaybold;
 }
@@ -988,7 +994,7 @@ header
 	margin-left: auto;
 }
 
-#section_3 h1
+#section_3 h2
 {
 	font-family: ralewaybold;
 	margin-top: 60px;
