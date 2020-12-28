@@ -182,15 +182,12 @@ header
 	line-height: 50px;
 }
 
-#filtres ul
+#filtres h1
 {
-	display: flex;
-	flex-wrap: wrap;
-	list-style-type: none;
-	margin: 0px;
+	margin-right: 2%;
 }
 
-#filtres ul li
+#filtres p
 {
 	padding-right: 15px;
 	height: 50px;
@@ -201,26 +198,33 @@ header
 	font-family: ralewaybold;
 	position: relative;
 	right: 21px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
 }
 
 #eco
 {
 	display: flex;
+	padding-bottom: 10px;
 }
 
 #fam
 {
 	display: flex;
+	padding-bottom: 10px;
 }
 
 #romantique
 {
 	display: flex;
+	padding-bottom: 10px;
 }
 
 #animaux
 {
 	display: flex;
+	padding-bottom: 10px;
 }
 
 .fa-money-bill-wave
