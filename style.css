@@ -140,18 +140,19 @@ header
 	z-index: 3;
 }
 
-#ville p
+#search
 {
 	border-top: 1px solid #F2F2F2;
 	border-bottom: 1px solid #F2F2F2;
-	padding-top: 14px;
-	padding-bottom: 14px;
-	width: 100%;
+	width: 55%;
 	padding-left: 30px;
 	margin: 0px;
 	z-index: 1;
 	text-align: left;
 	font-family: ralewaybold;
+	height: 48px;
+	border-left: none;
+	border-right: none;
 }
 
 #rechercher
@@ -163,9 +164,12 @@ header
 {
 	background-color: #0065FC;
 	border-radius: 0px 15px 15px 0px;
-	padding-top: 16px;
-	padding-bottom: 16px;
+	height: 48px;
 	color: white;
+	margin: 0;
+	line-height: 48px;
+	padding-left: 10%;
+	font-family: ralewaybold;
 }
 
 #rechercher .fa-search
@@ -1502,7 +1506,7 @@ footer
 		z-index: 3;
 	}
 
-	#filtres h1
+	#filtres h2
 	{
 		width: 100%;
 	}
@@ -1569,7 +1573,7 @@ footer
 		padding-right: 0;
 	}
 
-	#hebergements_ville h1
+	#hebergements_ville h2
 	{
 		margin-top: 30px;
 		margin-bottom: 10px;
@@ -1797,7 +1801,7 @@ footer
 
 	
 
-	#filtres h1
+	#filtres h2
 	{
 		width: 100%;
 	}
@@ -1807,14 +1811,6 @@ footer
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-	}
-
-	#filtres ul 
-	{
-
-		padding-left: 0;
-		margin-left: 0;
-		margin-right: 0;
 	}
 
 	#filtres span 
@@ -1862,7 +1858,7 @@ footer
 		padding-right: 0;
 	}
 
-	#hebergements_ville h1
+	#hebergements_ville h2
 	{
 		margin-top: 5%;
 		margin-bottom: 5%;
