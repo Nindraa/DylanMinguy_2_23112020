@@ -27,6 +27,7 @@ body
 	font-family: ralewayregular, ralewaybold, serif;
 	font-weight: normal;
 	margin-top: 0px;
+	margin: 0%;
 }
 
 header
@@ -1296,11 +1297,11 @@ header
 
 footer
 {
-	width: 100%;
+	width: 92%;
 	height: 220px;
 	display: flex;
 	background-color: #F2F2F2;
-	padding-left: 50px;
+	padding-left: 8%;
 }
 
 #a_propos
@@ -1518,14 +1519,6 @@ footer
 		flex-wrap: wrap;
 	}
 
-	#filtres ul 
-	{
-
-		padding-left: 0;
-		margin-left: 0;
-		margin-right: 0;
-	}
-
 	#filtres span 
 	{
 		margin-left: 0;
@@ -1564,7 +1557,7 @@ footer
 	#hebergements_ville
 	{
 		width: 90%;
-		height: 1400px;
+		height: auto;
 		margin: auto;
 		background-color: white;
 		flex-direction: column;
@@ -1575,8 +1568,8 @@ footer
 
 	#hebergements_ville h2
 	{
-		margin-top: 30px;
-		margin-bottom: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 
 	#annonces
@@ -1687,6 +1680,7 @@ footer
 	{
 		flex-direction: column;
 		height: auto;
+		width: 92%;
 	}
 
 	#a_propos
@@ -1714,7 +1708,6 @@ footer
 	body
 	{
 		width: 100%;
-		margin: 0;
 	}
 
 	header 
@@ -1978,7 +1971,7 @@ footer
 
 	footer
 	{
-		width: 100%;
+		width: 92%;
 		display: flex;
 		justify-content: space-between;
 	}
