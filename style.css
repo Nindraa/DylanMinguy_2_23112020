@@ -208,28 +208,16 @@ header
 	margin: 0;
 }
 
-#eco
+.filtre
 {
 	display: flex;
-	padding-bottom: 10px;
+	margin-bottom: 10px;
 }
 
-#fam
+.filtre:hover p 
 {
-	display: flex;
-	padding-bottom: 10px;
-}
-
-#romantique
-{
-	display: flex;
-	padding-bottom: 10px;
-}
-
-#animaux
-{
-	display: flex;
-	padding-bottom: 10px;
+	background-color: #0065FC;
+	color: white;
 }
 
 .fa-money-bill-wave
